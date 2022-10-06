@@ -1,0 +1,10 @@
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-check:hover,
+.modal-form-check:focus,
+.modal-form-messege:hover,
+.modal-form-messege:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
