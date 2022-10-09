@@ -3,19 +3,17 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
- 
+
 .footer-container {
-    display: flex;
+    display: block;
 }
 
 .footer-inf {
-    display: inline-block;
-
+    display: block;
+    text-align: center;
 }
 
 .footer-logo {
-    margin-bottom: 20px;
-
     color: var(--accent-color);
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -29,13 +27,13 @@
     color: var(--primary-white-color);
 }
 
-.footer-inf__list{
+.footer-inf__list {
     list-style: none;
     margin-top: 20px;
 }
 
 .footer-inf__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     &:last-child {
         margin-bottom: 0px;
@@ -69,10 +67,7 @@
     }
 }
 
-.footer-item{
-    margin-top: 12px;
-    margin-left: 70px;
-}
+
 
 .footer-item__title {
     font-family: 'Roboto';
@@ -88,6 +83,7 @@
 
 .footer-social-list {
     column-gap: 10px;
+    justify-content: center;
 }
 
 .footer-social-list__item {
@@ -116,8 +112,7 @@
 }
 
 .footer-subscribe {
-    margin-top: 12px;
-    margin-left: 93px;
+   text-align: center;
 }
 
 .footer-subscribe-title {
@@ -132,14 +127,14 @@
 }
 
 .footer-form-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
 
     &::placeholder {
         font-size: 16px;
@@ -171,3 +166,64 @@
 .footer-form-icon {
     margin-left: 10px;
 }
+
+
+@media screen and (max-width: 767px){
+.footer-item {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer-container {
+         display: flex;
+         flex-wrap: wrap;
+     }
+    .footer-item {
+        margin-top: 5px;
+        margin-left: 165px;
+        text-align: center;
+    }
+
+    .footer-inf {
+        margin-left: 61px;
+    }
+
+    .footer-subscribe {
+        margin-top: 60px;
+        margin-left: 166px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .footer-container {
+            flex-wrap: nowrap;
+        }
+    
+        .footer-item {
+            margin-top: 12px;
+            margin-left: 70px;
+            text-align: left;
+        }
+    
+    
+    
+    .footer-inf {
+           text-align: left;
+           margin-left: 0px;
+    }
+
+    .footer-subscribe {
+        margin-top: 12px;
+        margin-left: 93px;
+        text-align: left;
+    }
+ }
+
+
+
+
+
