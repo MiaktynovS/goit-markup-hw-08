@@ -80,11 +80,6 @@ img {
     width: 1200px;
   }
 }
-@media screen and (min-width: 280px) {
-  .body {
-    overflow: hidden;
-  }
-}
 .section-title {
   display: flex;
   margin-bottom: 50px;
@@ -421,7 +416,7 @@ img {
   color: var(--primary-white-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .work-section {
     display: none;
   }
@@ -487,11 +482,32 @@ img {
   fill: var(--primary-white-color);
 }
 
+@media screen and (min-width: 320px) {
+  .team__element {
+    width: 272px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .team__element {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+  }
+  .team__element {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-wrap: nowrap;
+  }
+  .team__element {
+    width: 272px;
   }
 }
 .clients {
